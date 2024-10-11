@@ -15,7 +15,7 @@
 
       nixpkgs.config.allowUnfree = true ;
       environment.systemPackages =
-        [ 
+        [
           pkgs.alacritty
           pkgs.mkalias
           pkgs.neovim
@@ -26,8 +26,8 @@
           pkgs.dotnetPackages.Paket
           pkgs.jdk
         ];
-     
-      fonts.packages = 
+
+      fonts.packages =
         [
           (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
         ];
@@ -42,6 +42,11 @@
       # Create /etc/zshrc that loads the nix-darwin environment.
       programs.zsh.enable = true;  # default shell on catalina
       # programs.fish.enable = true;
+
+      system.defaults = {
+        finder.FXPreferredViewStyle = "clmv";
+        NSGlobalDomain.AppleICUForce24HourTime = true;
+      };
 
       # Set Git commit hash for darwin-version.
       system.configurationRevision = self.rev or self.dirtyRev or null;
