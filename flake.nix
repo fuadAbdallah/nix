@@ -17,9 +17,11 @@
           pkgs.alacritty
           pkgs.mkalias
           pkgs.neovim
+          pkgs.vscode
           pkgs.zed
           pkgs.gimp
           pkgs.dotnetCorePackages.sdk_9_0
+          pkgs.dotnetPackages.Paket
           pkgs.jdk
         ];
      
