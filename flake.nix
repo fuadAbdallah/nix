@@ -25,6 +25,9 @@
           pkgs.dotnetCorePackages.sdk_9_0
           pkgs.dotnetPackages.Paket
           pkgs.jdk
+          pkgs.iterm2
+          pkgs.keepassxc
+          pkgs.unar
         ];
 
       fonts.packages =
