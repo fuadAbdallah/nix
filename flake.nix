@@ -28,6 +28,7 @@
           pkgs.iterm2
           pkgs.keepassxc
           pkgs.unar
+          pkgs.inkscape
         ];
 
       fonts.packages =
