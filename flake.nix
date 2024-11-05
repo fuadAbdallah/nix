@@ -16,7 +16,6 @@
       nixpkgs.config.allowUnfree = true ;
       environment.systemPackages =
         [
-          pkgs.alacritty
           pkgs.mkalias
           pkgs.neovim
           pkgs.vscode
@@ -26,9 +25,6 @@
           pkgs.dotnetPackages.Paket
           pkgs.jdk
           pkgs.iterm2
-          pkgs.keepassxc
-          pkgs.unar
-          pkgs.inkscape
         ];
 
       fonts.packages =
