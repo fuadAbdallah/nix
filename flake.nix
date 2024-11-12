@@ -25,6 +25,7 @@
           pkgs.dotnetPackages.Paket
           pkgs.jdk
           pkgs.iterm2
+          pkgs.warp-terminal
           pkgs.dbeaver-bin
         ];
 
